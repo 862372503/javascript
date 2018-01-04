@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jquery001.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="../jquery-3.2.1.js"></script>
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    <script type="text/javascript">
+    	/* window.onload=function (){
+    	}
+    $(document).ready(function(){
+    
+    }) */
+    $(function(){
+    	$("#dombutton").click(
+    	function(){
+    	//alert("今天");
+    	var username=document.getElementById("username");
+    	var $username=$(username);
+    	alert($username.val());
+    	
+    	
+    	});
+    	
+    })
+    
+    
+    </script>
+
+  </head>
+  
+  <body>
+    <input style="text" id="username">
+    <input style="button" id="dombutton" value="dom vs jquery" >
+  </body>
+</html>
