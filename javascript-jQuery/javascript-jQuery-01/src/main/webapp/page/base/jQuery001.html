@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html>
+  <head>
+    <title>jQuery  dom 对象 与js 对象  的区别</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script  type="text/javascript"  src="../../js/jquery-1.4.2.js"></script>
+	
+	<script type="text/javascript">
+				//页面加载完毕执行
+//				window.onload=function(){
+//					
+//					
+//				}
+				//页面加载完毕执行
+//				$(document).ready(function(){
+//					
+//				})
+			//页面加载完毕执行
+				$(function(){
+						$("#dombutton").click(function(){
+							
+							  //什么是dom 对象...
+//							  var username=document.getElementById("username");
+//							  
+//							  //dom 对象可以调用dom 里面的属性和方法...
+//							  
+//							  alert(username.value);
+
+								//jQuery 对象...
+//							 	var $username=$("#username");
+//								alert($username.val());
+
+								//dom 对象要是用jQuery 里面的方法..  我们可以讲dom 对象转换成jQuery 对象..
+//								var username=document.getElementById("username");
+//								
+//								var $username=$(username);
+//								
+//								alert($username.val());
+
+								//jQuery 对象想要是用dom 对象里面的属性和方法，也可以转换...
+								var $username=$("#username");
+								
+								alert($username.length);
+								
+								//转换有两种方式...
+								//第一种方式...
+//								var username=$username[0];
+//								
+//								alert(username.value);
+
+								//第二种转换方式..
+//								//var username=$username.get(0);
+//								
+//								alert(username.value);
+								
+								
+								//结论：jQuery 对象是一个数组..
+						})
+					
+					
+				})
+				
+				
+			
+		
+		
+	</script>
+	
+	
+
+
+  </head>
+  
+  <body>
+    		<input type="text"  id="username" >
+			
+			<input type="button" id="dombutton" value="dom vs jQuery ����">
+  </body>
+</html>
