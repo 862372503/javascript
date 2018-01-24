@@ -20,5 +20,6 @@
   </build>
   <modules>
   	<module>javascript-UI-easyUI</module>
+  	<module>javascript-UI-Bootstrap4</module>
   </modules>
 </project>
