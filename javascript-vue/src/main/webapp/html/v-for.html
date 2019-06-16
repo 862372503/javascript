@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    <title>v-for.html</title>
+   
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<script type="text/javascript" src="../js/vue.js">
+	</script>
+	
+  </head>
+
+  <body>
+
+<div id="app4">
+	<ol>
+		<li v-for="todo in todos" >{{todo.text}}</li>
+	</ol>
+</div>
+  </body>
+    <script type="text/javascript">
+	var app4=new Vue({
+		el:'#app4',
+		data:{
+			todos:[
+				{ text:'学习javascript'},
+				{ text:'学习Vue'},
+				{ text:'学习整个牛项目'}
+			] 
+		}
+	})
+	
+  </script>
+</html>

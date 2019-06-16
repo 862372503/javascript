@@ -18,5 +18,6 @@
   <modules>
   	<module>javascript-jQuery</module>
   	<module>javascript-UI</module>
+  	<module>javascript-vue</module>
   </modules>
 </project>

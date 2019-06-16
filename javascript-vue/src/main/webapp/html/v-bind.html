@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    <title>v-bind.html</title>
+   
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<script type="text/javascript" src="../js/vue.js">
+	</script>
+	
+  </head>
+
+  <body>
+
+  <div id="app1">
+  <span v-bind:title="message1">
+    鼠标悬停几秒钟查看此处动态绑定的提示信息！
+  </span>
+</div>
+
+  </body>
+    <script type="text/javascript">
+var app1 = new Vue({
+	  el: '#app1',
+	  data: {
+	    message1: '页面加载于 ' + new Date().toLocaleString()
+	  }
+	})
+
+  </script>
+</html>
